@@ -5,18 +5,9 @@ rvm:
   - 2.3.7
   - 2.4.4
   - 2.5.1
-  #- "jruby-1.7.27"
   - "jruby-9.2.0.0"
   
 build:
     
   ci:
-    - ruby -v  
-    - docker pull shippabledocker/sample_node_pvt:ecr
-    
-integrations:
-    
-  hub:
- #Docker integration
-    - integrationName: ship-docker
-      type: dockerRegistryLogin
+    - ruby -v 
